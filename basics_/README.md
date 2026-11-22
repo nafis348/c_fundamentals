@@ -2,14 +2,15 @@
 
 A minimal C program demonstrating standard output and basic program structure.
 
-```c
+   c
 #include <stdio.h>
 
-int main(void) {
+int main(void)
+{
     printf("Hello, World!\n");
     return 0;
 }
-```
+
 
 ### Key Takeaways
 - **`#include <stdio.h>`**: Imports the Standard Input/Output library required for `printf()`.
