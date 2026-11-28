@@ -13,20 +13,14 @@ int main(void)
 }
 
 
-### Key Takeaways
-- **`#include <stdio.h>`**: Imports the Standard Input/Output library required for `printf()`.
-- **`int main(void)`**: Entry point of the program; takes no arguments and returns an integer status code.
-- **`printf("Hello, World!\n");`**: Prints formatted text to the console, where `\n` moves the cursor to a new line.
-- **`return 0;`**: Signals successful program termination to the operating system.
-- **Semicolons (`;`) & Braces (`{}`)**: Statements end with `;`, and function bodies are enclosed within `{}`.
-
-### Compile & Run (GCC)
-```bash
-gcc hello.c -o hello
-./hello
-```
+Key Takeaways
+#include <stdio.h>: Imports the Standard Input/Output library required for printf().
+int main(void): Entry point of the program; takes no arguments and returns an integer status code.
+printf("Hello, World!\n");`: Prints formatted text to the console, where \n moves the cursor to a new line.
+return 0;: Signals successful program termination to the operating system.
+Semicolons (;) & Braces{}: Statements end with ; and function bodies are enclosed within {}.
                                                  Day-2
-A C program demonstrating basic arithmetic operations (+, -, *, /, %) and floating-point division using typecasting.
+#A C program demonstrating basic arithmetic operations (+, -, *, /, %) and floating-point division using typecasting.
 
 #include <stdio.h>
 
@@ -59,7 +53,39 @@ int main() {
 }
 
 # Basic Arithmetic & Floating-Point Operations in C
-
+key takeways
 This program demonstrates fundamental arithmetic operations in C using two integer variables (`num1 = 2` and `num2 = 3`). It covers addition (`+`), subtraction (`-`), multiplication (`*`), integer division (`/`), and modulo (`%`) to find the remainder. Since dividing two integers in C truncates the decimal value, the program also uses explicit typecasting (`(float)num1 / num2`) to perform floating-point division and preserve decimal precision (`0.6667`).
 
                                                    Day-3
+## User Input & Formatted Output (`printf` & `scanf`)
+
+### Concept
+In C, `<stdio.h>` provides `printf()` to display formatted output on the console and `scanf()` to read user input from standard input (keyboard).
+
+### Example Code
+```c
+#include <stdio.h>
+
+int main() {
+    int age;
+    float gpa;
+
+    printf("Enter your age: ");
+    scanf("%d", &age);
+
+    printf("Enter your GPA: ");
+    scanf("%f", &gpa);
+
+    printf("Age: %d | GPA: %.2f\n", age, gpa);
+    return 0;
+}
+Key Takeaways
+Header Requirement: Both printf() and scanf() require #include <stdio.h>.
+
+Format Specifiers: Use %d for integers (int), %f for floating-point numbers (float), and %c for single characters (char).
+
+Address-of Operator (&): scanf() requires & before the variable name (e.g., &age) so it knows the exact memory address where the input value should be stored.
+
+Precision Formatting: Using %.2f inside printf() rounds and displays a float up to 2 decimal places.
+
+Escape Sequences: \n moves the cursor to a new line for cleaner console output.
