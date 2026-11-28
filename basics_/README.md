@@ -61,3 +61,5 @@ int main() {
 # Basic Arithmetic & Floating-Point Operations in C
 
 This program demonstrates fundamental arithmetic operations in C using two integer variables (`num1 = 2` and `num2 = 3`). It covers addition (`+`), subtraction (`-`), multiplication (`*`), integer division (`/`), and modulo (`%`) to find the remainder. Since dividing two integers in C truncates the decimal value, the program also uses explicit typecasting (`(float)num1 / num2`) to perform floating-point division and preserve decimal precision (`0.6667`).
+
+                                                   Day-3
